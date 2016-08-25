@@ -1,0 +1,7 @@
+<h1>All flats in this city</h1>
+
+<ul>
+  <% @flats.each do |flat| %>
+    <li><a href="http://localhost:3000/flats/<%=flat.id%>" target='_self'><%= flat.name %></a></li>
+  <% end %>
+</ul>

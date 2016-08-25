@@ -1,0 +1,8 @@
+
+<h1>Available cities</h1>
+
+<ul>
+  <% @cities.each do |city| %>
+    <li><a href="http://localhost:3000/cities/<%=city%>"><%=city%></a></li>
+  <% end %>
+</ul>
